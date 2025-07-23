@@ -9,34 +9,40 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^6.12.0",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "autoprefixer": "^10.4.21",
-    "axios": "^1.11.0",
-    "bcryptjs": "^3.0.2",
+    "@prisma/client": "^5.19.1",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
-    "lucide-react": "^0.525.0",
-    "next": "^15.4.3",
-    "postcss": "^8.5.6",
-    "prisma": "^6.12.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "lucide-react": "^0.445.0",
+    "next": "14.2.13",
+    "postcss": "^8.4.47",
+    "prisma": "^5.19.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20.19.9",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "eslint": "^9.31.0",
-    "eslint-config-next": "^15.4.3",
-    "tailwindcss": "^3.4.15",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.13",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
   },
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "Village SACCO - Modern Financial Services for Rural Communities. Built for Bitnob + Tether Hackathon 2025.",
+  "keywords": [
+    "sacco",
+    "fintech",
+    "blockchain",
+    "usdt",
+    "rural-finance",
+    "bitnob",
+    "tether",
+    "hackathon"
+  ],
+  "author": "Godwin Ofwono",
+  "license": "MIT"
 }

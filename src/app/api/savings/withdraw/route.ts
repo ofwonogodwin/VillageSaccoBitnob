@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value;
-    
+
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     });
 
     const currentBalance = (deposits._sum?.amount || 0) - (withdrawals._sum?.amount || 0);
-    
+
     if (currentBalance < parseFloat(amount)) {
       return NextResponse.json({ error: 'Insufficient balance' }, { status: 400 });
     }
