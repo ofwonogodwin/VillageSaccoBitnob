@@ -6,11 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push",
-    "db:seed": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed.ts",
-    "db:studio": "prisma studio"
+    "lint": "next lint"
   },
   "dependencies": {
     "@prisma/client": "^6.12.0",
@@ -25,31 +21,23 @@
     "postcss": "^8.5.6",
     "prisma": "^6.12.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^3.4.0"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.9",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "eslint": "^9.31.0",
     "eslint-config-next": "^15.4.3",
+    "tailwindcss": "^4.1.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
-  "description": "Village SACCO - Digital Financial Services for Rural Communities",
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "index.js",
-  "keywords": [
-    "SACCO",
-    "rural finance",
-    "USDT",
-    "digital banking",
-    "microfinance"
-  ],
-  "author": "Village SACCO Team",
-  "license": "MIT",
-  "prisma": {
-    "seed": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed.ts"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
