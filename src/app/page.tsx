@@ -37,14 +37,14 @@ export default function Home() {
         {/* Professional Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-white via-emerald-50/40 to-[#00BB77]/15"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/50 to-green-100/30"></div>
-        
+
         {/* Subtle Pattern Overlay */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300BB77' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -53,19 +53,19 @@ export default function Home() {
                 <CheckCircle className="h-4 w-4" />
                 <span>Trusted by 500+ Communities</span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Modern Financial
                 <span className="block text-[#00BB77]">Services for</span>
                 <span className="block text-gray-700">Rural Communities</span>
               </h1>
-              
+
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Empower your community with blockchain-powered SACCO services. 
-                Secure savings, instant loans, virtual cards, and global transfers 
+                Empower your community with blockchain-powered SACCO services.
+                Secure savings, instant loans, virtual cards, and global transfers
                 designed specifically for village economies.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Link
                   href="/auth/register"
@@ -75,13 +75,13 @@ export default function Home() {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="#features"
+                  href="#demo"
                   className="border-2 border-[#00BB77] text-[#00BB77] hover:bg-[#00BB77] hover:text-white px-8 py-4 rounded-md font-semibold text-lg transition-all duration-200 flex items-center justify-center"
                 >
-                  Learn More
+                  Try Demo
                 </Link>
               </div>
-              
+
               {/* Trust Indicators */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
                 <div className="text-center">
@@ -98,7 +98,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             {/* Right Content - Professional Dashboard Preview */}
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
@@ -107,7 +107,7 @@ export default function Home() {
                   <h3 className="text-lg font-semibold text-gray-900">Dashboard Overview</h3>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
-                
+
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center justify-between p-4 bg-gradient-to-r from-[#00BB77]/10 to-emerald-50 rounded-lg">
                     <div className="flex items-center space-x-3">
@@ -121,7 +121,7 @@ export default function Home() {
                     </div>
                     <TrendingUp className="h-5 w-5 text-[#00BB77]" />
                   </div>
-                  
+
                   <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                     <div className="flex items-center space-x-3">
                       <div className="bg-blue-500 p-2 rounded-lg">
@@ -133,7 +133,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                     <div className="flex items-center space-x-3">
                       <div className="bg-purple-500 p-2 rounded-lg">
@@ -146,7 +146,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex space-x-3">
                   <button className="flex-1 bg-[#00BB77] text-white py-2 px-4 rounded-md text-sm font-medium">
                     Quick Transfer
@@ -156,7 +156,7 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              
+
               {/* Demo Credentials Badge */}
               <div className="absolute -bottom-4 -right-4 bg-[#00BB77] text-white p-4 rounded-xl shadow-lg">
                 <div className="text-xs font-medium mb-1">Demo Access</div>
@@ -273,7 +273,7 @@ export default function Home() {
               Experience the full SACCO platform with our interactive demo.
               No registration required - just login and explore all features.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-gray-50 rounded-lg p-6">
                 <h4 className="font-semibold text-gray-900 mb-2">Member Dashboard</h4>
@@ -283,7 +283,7 @@ export default function Home() {
                   <div><strong>Password:</strong> member123</div>
                 </div>
               </div>
-              
+
               <div className="bg-gray-50 rounded-lg p-6">
                 <h4 className="font-semibold text-gray-900 mb-2">Admin Dashboard</h4>
                 <p className="text-sm text-gray-600 mb-4">Explore administrative features</p>
@@ -293,7 +293,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <Link
               href="/auth/login"
               className="bg-[#00BB77] hover:bg-[#00995F] text-white px-8 py-4 rounded-md font-semibold text-lg transition-all duration-200 inline-flex items-center space-x-2 shadow-lg hover:shadow-xl"
