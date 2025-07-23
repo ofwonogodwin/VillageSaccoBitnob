@@ -1,15 +1,41 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      String   @default("MEMBER")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Relations
+  sentTransactions     Transaction[] @relation("SentTransactions")
+  receivedTransactions Transaction[] @relation("ReceivedTransactions")
+}
+
+model Transaction {
+  id          String   @id @default(cuid())
+  amount      Float
+  type        String   // DEPOSIT, WITHDRAWAL, TRANSFER, LOAN
+  status      String   @default("PENDING")
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  fromUserId  String?
+  toUserId    String?
+  fromUser    User?    @relation("SentTransactions", fields: [fromUserId], references: [id])
+  toUser      User?    @relation("ReceivedTransactions", fields: [toUserId], references: [id])
 }
